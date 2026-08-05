@@ -1,0 +1,23 @@
+name: Rolling restart
+on: 
+  workflow_dispatch: 
+    inputs:
+      customer_short_name:
+        description: customer short name
+        required: true
+      environment:
+       description: environment
+       type: choice
+       options:
+         - dev
+         - pord
+      region:
+       description: region
+       type: choice
+       options:
+         - primary
+         - secondary
+         
+         
+        
+jobs:
