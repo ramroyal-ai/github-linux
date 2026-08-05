@@ -18,8 +18,15 @@ on:
           - primary
           - secondary
 jobs:
- steps:
-  runs-on: ubuntu-latest
+  restart-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print inputs
+        run: |
+          echo "Restarting customer: ${{ github.event.inputs.customer_short_name }}"
+          echo "Environment: ${{ github.event.inputs.environment }}"
+          echo "Region: ${{ github.event.inputs.region }}"
+
   
          
          
