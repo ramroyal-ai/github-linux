@@ -6,18 +6,21 @@ on:
         description: customer short name
         required: true
       environment:
-       description: environment
-       type: choice
-       options:
-         - dev
-         - pord
+        description: environment
+        type: choice
+        options:
+          - dev
+          - pord
       region:
-       description: region
-       type: choice
-       options:
-         - primary
-         - secondary
-         
-         
-        
+        description: region
+        type: choice
+        options:
+          - primary
+          - secondary
 jobs:
+ steps:
+  runs-on: ubuntu-latest
+  
+         
+         
+    
