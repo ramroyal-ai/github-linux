@@ -6,7 +6,7 @@ jobs:
      runs-on: ubuntu-latest
      steps:
        - name: Print welcome message 
-         run: echo "Unlock Admin"
+         run: echo "Welcome Unlock Admin"
 
 
        
